@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <p> 💲 Tu Dinero online </p>
+        <p>Hola, te damos la Bienvenida </p>
+    </header>
+
+    <main>
+        <div class="imagenCentral">
+            <h1>Tu Dinero online</h1>
+            <img src="/img/cajero.png" alt="Imagen de una persona sacando dinero del cajero" id="imgCentral">
+        </div>
+        
+        <div class="cajero">
+            <div>
+                
+                    <input type="button" value="Consulta tu saldo" id="balanceValue" onclick="balance()">  
+                    <div class="lado-lado">
+                        <p>Tu saldo actual es de: 💲</p>   
+                        <input type="text" name="balance" id="balanceEnd" value="200">  
+                    </div>
+                             
+
+            <div>
+                <div class="lado-lado-centro">
+                        <img src="/img/ingresarDinero.png" alt="Imagen de ingresar dinero">
+                        <p>Ingresar monto </p>
+                </div>
+                <div class="lado-lado-centro">
+                    <input type="number" name="" id="depositValue" placeholder="$" >
+                    <input type="button" value="Ok" id="depositClic" onclick="addition()">
+                </div>    
+            </div>
+    
+            <div>
+                <div class="lado-lado-centro">
+                        <img src="/img/retirarDinero.png" alt="Imagen de retirar dinero">
+                        <p>Retirar monto </p>
+                </div>
+                <div class="lado-lado-centro">
+                    <input type="number" name="Take to Balance" id="takeValue" placeholder="$" >
+                    <input type="button" value="Ok" id="takeClic" onclick="substraction()">      
+                </div>     
+            </div>
+
+            <div>     
+                <input type="button" value="Salir de aplicación" onclick="leave()" id="leaveApp">    
+            </div>
+
+        </div>
+
+        
+    </main>
+    
+    <script src="main.js"></script>
+</body>
+</html>

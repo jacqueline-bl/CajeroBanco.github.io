@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cajero automático</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <p> 💲 Tu Dinero online </p>
+        <p>Hola, te damos la Bienvenida </p>
+    </header>
+
+    
+    <div class="imagenCentral">
+        <h2>Iniciar Sesión</h2>
+        <img src="/img/usuario.jpg" alt="Ilustración que hace referencia a un usuario" id="imgCentral" />
+    </div>
+
+    <div>
+        <form  id="formLogin">
+            <div>
+              
+                <input type="text" name="cajeroLogin" id="inputUserHtml" placeholder="Ingresa tu usuario"  />
+                <span id="mistakeUser" class="hide">Usuario incorrecto</span>
+            </div>
+            <div>
+                
+                <input type="password" name="cajeroLogin" id="InputPasswordHtml" placeholder="Ingresa tu contraseña" />
+                <span id="mistakePassword" class="hide">Contraseña incorrecta</span>
+            </div>
+            <div>
+                <input type="submit" value="Entrar" onclick="login(this.form)"/>
+                <span id="mistakeData" class="hide">Ingresa tus datos</span>
+            </div>
+        </form>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
